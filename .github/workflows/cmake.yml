@@ -27,11 +27,11 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration
-      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} --target all -j 10 --
+      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} --target num_converters -j 10 --
 
     - name: Build2
       # Build your program with the given configuration
-      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} --target all -j 10 --
+      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} --target num_converters_tests -j 10 --
 
     - name: Test
       working-directory: ${{github.workspace}}/build
