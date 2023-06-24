@@ -7,7 +7,7 @@ target_include_directories(num_converters PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/inc
 
 add_executable(num_converters_tests tests.c)
 target_include_directories(num_converters_tests PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
-target_link_libraries(num_converters_tests ${CMAKE_CURRENT_SOURCE_DIR}/lib/libcunit.a)
+target_link_libraries(num_converters_tests cunit)
 target_link_libraries(num_converters_tests num_converters)
 
 
