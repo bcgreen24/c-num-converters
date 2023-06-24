@@ -1,0 +1,58 @@
+.TH "library.c" 3lib_num_converters" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+library.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string\&.h>\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+\fC#include 'library\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "const char * \fBint2bin\fP (int number)"
+.br
+.ti -1c
+.RI "int \fBbin2int\fP (char *number)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int bin2int (char * number)"
+This function converts a binary number (string) into an integer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInumber\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The integer represented by the binary string 'number' 
+.RE
+.PP
+
+.SS "const char * int2bin (int number)"
+This function converted an integer to a binary number (as a string)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInumber\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The integer number converted to its binary representation\&. 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for lib_num_converters from the source code\&.

@@ -1,0 +1,43 @@
+\doxysection{library.\+c File Reference}
+\hypertarget{library_8c}{}\label{library_8c}\index{library.c@{library.c}}
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \"{}library.\+h\"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{library_8c_af0a0802ce3dbedc85984abf55a4c1575}{int2bin}} (int number)
+\item 
+int \mbox{\hyperlink{library_8c_af6ffb6ce6945cf380f5f8abe326e8b55}{bin2int}} (char \texorpdfstring{$\ast$}{*}number)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{library_8c_af6ffb6ce6945cf380f5f8abe326e8b55}\label{library_8c_af6ffb6ce6945cf380f5f8abe326e8b55} 
+\index{library.c@{library.c}!bin2int@{bin2int}}
+\index{bin2int@{bin2int}!library.c@{library.c}}
+\doxysubsubsection{\texorpdfstring{bin2int()}{bin2int()}}
+{\footnotesize\ttfamily int bin2int (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{number }\end{DoxyParamCaption})}
+
+This function converts a binary number (string) into an integer. 
+\begin{DoxyParams}{Parameters}
+{\em number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The integer represented by the binary string \textquotesingle{}number\textquotesingle{} 
+\end{DoxyReturn}
+\Hypertarget{library_8c_af0a0802ce3dbedc85984abf55a4c1575}\label{library_8c_af0a0802ce3dbedc85984abf55a4c1575} 
+\index{library.c@{library.c}!int2bin@{int2bin}}
+\index{int2bin@{int2bin}!library.c@{library.c}}
+\doxysubsubsection{\texorpdfstring{int2bin()}{int2bin()}}
+{\footnotesize\ttfamily const char \texorpdfstring{$\ast$}{*} int2bin (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
+
+This function converted an integer to a binary number (as a string). 
+\begin{DoxyParams}{Parameters}
+{\em number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The integer number converted to its binary representation. 
+\end{DoxyReturn}
