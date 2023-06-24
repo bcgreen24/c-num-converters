@@ -6,10 +6,9 @@ add_library(num_converters lib_num_converters.c)
 target_include_directories(num_converters PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
 add_executable(num_converters_tests tests.c)
+find_library(CUNIT_LIB cunit PATHS $${PROJECT_SOURCE_DIR})
 target_include_directories(num_converters_tests PUBLIC ${PROJECT_SOURCE_DIR}/include)
-target_link_libraries(num_converters_tests PUBLIC cunit num_converters m)
-# target_link_libraries(num_converters_tests num_converters)
-# target_link_libraries(num_converters_tests m)
+target_link_libraries(num_converters_tests PUBLIC ${CUNIT_LIB} num_converters m)
 
 
 enable_testing()
