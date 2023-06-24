@@ -6,7 +6,7 @@ add_library(num_converters lib_num_converters.c)
 target_include_directories(num_converters PUBLIC ${PROJECT_SOURCE_DIR}/include)
 
 add_executable(num_converters_tests tests.c)
-find_library(CUNIT_LIB cunit PATHS $${PROJECT_SOURCE_DIR})
+find_library(CUNIT_LIB libcunit.a PATHS $${PROJECT_SOURCE_DIR})
 target_include_directories(num_converters_tests PUBLIC ${PROJECT_SOURCE_DIR}/include)
 target_link_libraries(num_converters_tests PUBLIC ${CUNIT_LIB} num_converters m)
 
