@@ -9,3 +9,11 @@ add_executable(num_converters_tests tests.c)
 target_link_libraries(num_converters_tests /Users/bcgreen/CLionProjects/lib_num_converters/build/libnum_converters.a)
 target_link_libraries(num_converters_tests /Users/bcgreen/lib/libcunit.a)
 target_include_directories(num_converters_tests PUBLIC /Users/bcgreen/include)
+
+enable_testing()
+
+add_test(
+    NAME num_converters_tests
+    COMMAND $<TARGET_FILE:num_converters_tests>
+)
+
