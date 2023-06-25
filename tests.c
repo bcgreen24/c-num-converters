@@ -5,19 +5,21 @@
 
 int test_min(void){
     int numbers[7] = {45, 12, 3, 6, 4, 34, 88};
-    return (min(numbers, 7) == 3) ? 0 : 1;
+    int min_num = min(numbers, 7);
+    return (min_num == 3) ? 0 : 1;
 }
 
 int test_max(void){
     int numbers[7] = {45, 12, 3, 6, 4, 34, 88};
-    return (88 == max(numbers, 7)) ? 0 : 1;
+    int max_num = max(numbers, 7);
+    return (88 == max_num) ? 0 : 1;
 }
 
 int test_int2bin(void){
     int number = 7;
-    char *bin_text = int2bin(number);
+    const char *bin_text = int2bin(number);
     printf("\nValue returned from int2bin(7): %s\n", bin_text);
-    return (0 == strcmp("111", int2bin(7))) ? 0 : 1;
+    return (0 == strcmp("111", bin_text)) ? 0 : 1;
 }
 
 int test_bin2int(void){
@@ -42,6 +44,8 @@ int main(){
     errors += test_int2bin();
     errors += test_bin2int();
     errors += test_swap();
+
+    printf("Number of test failures: %d\n", errors);
 
     return (errors == 0) ? 0 : errors;
     // CU_pSuite pSuite = NULL;
