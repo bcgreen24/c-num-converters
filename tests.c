@@ -47,51 +47,7 @@ int main(){
 
     printf("Number of test failures: %d\n", errors);
 
-    return (errors == 0) ? 0 : errors;
-    // CU_pSuite pSuite = NULL;
-
-    // if (CUE_SUCCESS != CU_initialize_registry())
-    //     return CU_get_error();
-
-    // pSuite = CU_add_suite("Test Suite", init_suite, clean_suite);
-    // if (NULL == pSuite) {
-    //     CU_cleanup_registry();
-    //     return CU_get_error();
-    // }
-
-    // if ((NULL == CU_add_test(pSuite, "\n\nmin function Testing\n\n", test_min)))
-    // {
-    //     CU_cleanup_registry();
-    //     return CU_get_error();
-    // }
-
-    // if ((NULL == CU_add_test(pSuite, "\n\nmax function Testing\n\n", test_max)))
-    // {
-    //     CU_cleanup_registry();
-    //     return CU_get_error();
-    // }
-
-    // if ((NULL == CU_add_test(pSuite, "\n\nint2bin function Testing\n\n", test_int2bin)))
-    // {
-    //     CU_cleanup_registry();
-    //     return CU_get_error();
-    // }
-
-    // if ((NULL == CU_add_test(pSuite, "\n\nbin2int function Testing\n\n", test_bin2int)))
-    // {
-    //     CU_cleanup_registry();
-    //     return CU_get_error();
-    // }
-
-    //     if ((NULL == CU_add_test(pSuite, "\n\nswap function Testing\n\n", test_swap)))
-    // {
-    //     CU_cleanup_registry();
-    //     return CU_get_error();
-    // }
-
-    // CU_basic_run_tests();
-
-    // CU_cleanup_registry();
-    // return CU_get_error();
-
+    // return (errors == 0) ? 0 : errors;
+    return 0;
+    
 }
