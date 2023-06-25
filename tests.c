@@ -47,7 +47,6 @@ int main(){
 
     printf("Number of test failures: %d\n", errors);
 
-    // return (errors == 0) ? 0 : errors;
-    return 0;
-    
+    return (errors == 0) ? 0 : errors;
+       
 }
