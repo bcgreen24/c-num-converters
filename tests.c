@@ -40,10 +40,10 @@ int test_swap(void){
 int main(){
     int errors = 0;
     errors += test_min();
-    // errors += test_max();
+    errors += test_max();
     // errors += test_int2bin();
     // errors += test_bin2int();
-    // errors += test_swap();
+    errors += test_swap();
 
 
     return (errors == 0) ? 0 : errors;
